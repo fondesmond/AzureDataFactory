@@ -1,0 +1,16 @@
+{
+	"name": "AzureSqlDatabaseLinkedService_",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=v-defona-sqlserver.database.windows.net;initial catalog=v-defona-sqldb;user id=v-defona",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlMGIwYTJmZC0xZDI3LTRhMDktODFlOS05MTQzNjIwNGY3NGEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "v-defona-integrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
