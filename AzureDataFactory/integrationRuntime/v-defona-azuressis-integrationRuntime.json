@@ -1,0 +1,31 @@
+{
+	"name": "v-defona-azuressis-integrationRuntime",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "West Europe",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 4,
+				"vNetProperties": {
+					"vNetId": "/subscriptions/6bfb88db-92a9-4e0e-969f-da7eca23e6c2/resourceGroups/v-defona-rgr/providers/Microsoft.Network/virtualNetworks/v-defona-rgr-vnet",
+					"subnet": "default"
+				}
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "v-defona-sqlserver.database.windows.net",
+					"catalogAdminUserName": "v-defona",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
