@@ -1,0 +1,17 @@
+{
+	"name": "AzureCosmosDbMongoDbLinkedService",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "CosmosDbMongoDbApi",
+		"typeProperties": {
+			"connectionString": "mongodb://v-defona-cosmos-mongoapi:@v-defona-cosmos-mongoapi.documents.azure.com:10255/?ssl=true;replicaSet=globaldb",
+			"database": "v-defona-01",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxYzcwYTYzYi1lZjc4LTQ3M2EtYTFkZi0yN2RkOTYwOTdlM2MiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "v-defona-integrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
