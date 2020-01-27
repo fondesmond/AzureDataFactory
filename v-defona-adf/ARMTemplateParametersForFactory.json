@@ -5,10 +5,16 @@
 		"factoryName": {
 			"value": "v-defona-adf"
 		},
+		"integrationRuntime_v-defona-azuressis-integrationRuntime": {
+			"value": "v-defona-azuressis-integrationRuntime"
+		},
 		"integrationRuntime_v-defona-integrationRuntime": {
 			"value": "v-defona-integrationRuntime"
 		},
-		"AzureBlobStorageLinkedService_connectionString": {
+		"AzureBlobStorageLinkedService_servicePrincipalKey": {
+			"value": ""
+		},
+		"AzureCosmosDbMongoDbLinkedService_connectionString": {
 			"value": ""
 		},
 		"AzureSqlDatabaseLinkedService_connectionString": {
@@ -18,6 +24,33 @@
 			"value": ""
 		},
 		"AzureSynapseAnalyticsLinkedService_connectionString": {
+			"value": ""
+		},
+		"Office3651_LinkedService_servicePrincipalKey": {
+			"value": ""
+		},
+		"AzureBlobStorageLinkedService_properties_typeProperties_serviceEndpoint": {
+			"value": "https://vdefonastorageblobgen2.blob.core.windows.net"
+		},
+		"AzureBlobStorageLinkedService_properties_typeProperties_tenant": {
+			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+		},
+		"AzureBlobStorageLinkedService_properties_typeProperties_servicePrincipalId": {
+			"value": "a86f132a-dd4d-456c-9099-05e5a14e9773"
+		},
+		"AzureCosmosDbMongoDbLinkedService_properties_typeProperties_database": {
+			"value": "v-defona-01"
+		},
+		"Office3651_LinkedService_properties_typeProperties_servicePrincipalId": {
+			"value": "a86f132a-dd4d-456c-9099-05e5a14e9773"
+		},
+		"v-defona-azuressis-integrationRuntime_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
+			"value": "v-defona-sqlserver.database.windows.net"
+		},
+		"v-defona-azuressis-integrationRuntime_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminUserName": {
+			"value": "v-defona"
+		},
+		"v-defona-azuressis-integrationRuntime_properties_typeProperties_ssisProperties_catalogInfo_catalogAdminPassword": {
 			"value": ""
 		}
 	}
