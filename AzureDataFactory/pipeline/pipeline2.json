@@ -16,13 +16,109 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "Office365Source"
+						"type": "Office365Source",
+						"dateFilterColumn": "SentDateTime",
+						"startTime": "2020-01-24T00:00:00.000Z",
+						"endTime": "2020-01-25T00:00:00.000Z",
+						"userScopeFilterUri": "",
+						"outputColumns": [
+							{
+								"name": "ReceivedDateTime"
+							},
+							{
+								"name": "SentDateTime"
+							},
+							{
+								"name": "HasAttachments"
+							},
+							{
+								"name": "InternetMessageId"
+							},
+							{
+								"name": "Subject"
+							},
+							{
+								"name": "Importance"
+							},
+							{
+								"name": "ParentFolderId"
+							},
+							{
+								"name": "Sender"
+							},
+							{
+								"name": "From"
+							},
+							{
+								"name": "ToRecipients"
+							},
+							{
+								"name": "CcRecipients"
+							},
+							{
+								"name": "BccRecipients"
+							},
+							{
+								"name": "ReplyTo"
+							},
+							{
+								"name": "ConversationId"
+							},
+							{
+								"name": "UniqueBody"
+							},
+							{
+								"name": "IsDeliveryReceiptRequested"
+							},
+							{
+								"name": "IsReadReceiptRequested"
+							},
+							{
+								"name": "IsRead"
+							},
+							{
+								"name": "IsDraft"
+							},
+							{
+								"name": "WebLink"
+							},
+							{
+								"name": "CreatedDateTime"
+							},
+							{
+								"name": "LastModifiedDateTime"
+							},
+							{
+								"name": "ChangeKey"
+							},
+							{
+								"name": "Categories"
+							},
+							{
+								"name": "Id"
+							},
+							{
+								"name": "Attachments"
+							}
+						]
+					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						}
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "Office365Table1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Binary1",
 						"type": "DatasetReference"
 					}
 				]
