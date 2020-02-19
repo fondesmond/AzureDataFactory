@@ -337,24 +337,35 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/trigger1')]",
+			"name": "[concat(parameters('factoryName'), '/MonthlytriggerScheduled')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
-				"pipelines": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "GetTableListAndTriggerCopyData",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
-						"frequency": "Minute",
-						"interval": 1,
-						"startTime": "2020-01-17T15:55:00.000Z",
-						"timeZone": "UTC"
+						"frequency": "Day",
+						"interval": 30,
+						"startTime": "2020-02-19T13:15:00.000Z",
+						"timeZone": "UTC",
+						"schedule": {}
 					}
 				}
 			},
-			"dependsOn": []
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/GetTableListAndTriggerCopyData')]"
+			]
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/', parameters('integrationRuntime_v-defona-azuressis-integrationRuntime'))]",
