@@ -7,17 +7,15 @@
 		},
 		"parameters": {
 			"DWTableName": {
-				"type": "array"
+				"type": "string"
 			}
 		},
 		"annotations": [],
 		"type": "AzureSqlDWTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": {
-				"value": "@dataset().DWTableName",
-				"type": "Expression"
-			}
+			"schema": "dbo",
+			"table": "SalesLT.Address"
 		}
 	}
 }
