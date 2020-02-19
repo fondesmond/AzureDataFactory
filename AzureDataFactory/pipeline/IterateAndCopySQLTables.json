@@ -8,10 +8,6 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"items": {
-						"value": "@pipeline().parameters.tableList",
-						"type": "Expression"
-					},
 					"activities": [
 						{
 							"name": "Copy data1",
@@ -82,7 +78,7 @@
 			}
 		],
 		"parameters": {
-			"tableList ": {
+			"tableList": {
 				"type": "array"
 			}
 		},
