@@ -7,7 +7,7 @@
 		},
 		"parameters": {
 			"DWTableName": {
-				"type": "string"
+				"type": "array"
 			}
 		},
 		"annotations": [],
