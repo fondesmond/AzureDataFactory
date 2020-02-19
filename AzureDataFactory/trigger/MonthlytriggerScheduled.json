@@ -1,15 +1,15 @@
 {
-	"name": "trigger1",
+	"name": "MonthlytriggerScheduled",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Minute",
-				"interval": 1,
-				"startTime": "2020-01-17T15:55:00.000Z",
+				"frequency": "Day",
+				"interval": 30,
+				"startTime": "2020-02-19T13:15:00.000Z",
 				"timeZone": "UTC"
 			}
 		}
