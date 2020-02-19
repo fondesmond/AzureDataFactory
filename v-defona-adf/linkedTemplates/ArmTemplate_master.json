@@ -17,10 +17,6 @@
 			"metadata": "Integration runtime name",
 			"defaultValue": "v-defona-integrationRuntime"
 		},
-		"AzureBlobStorageLinkedService_servicePrincipalKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'servicePrincipalKey' of 'AzureBlobStorageLinkedService'"
-		},
 		"AzureCosmosDbMongoDbLinkedService_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureCosmosDbMongoDbLinkedService'"
@@ -43,15 +39,7 @@
 		},
 		"AzureBlobStorageLinkedService_properties_typeProperties_serviceEndpoint": {
 			"type": "string",
-			"defaultValue": "https://vdefonastorageblobgen2.blob.core.windows.net"
-		},
-		"AzureBlobStorageLinkedService_properties_typeProperties_tenant": {
-			"type": "string",
-			"defaultValue": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-		},
-		"AzureBlobStorageLinkedService_properties_typeProperties_servicePrincipalId": {
-			"type": "string",
-			"defaultValue": "a86f132a-dd4d-456c-9099-05e5a14e9773"
+			"defaultValue": "https://vdefonastorage.blob.core.windows.net"
 		},
 		"AzureCosmosDbMongoDbLinkedService_properties_typeProperties_database": {
 			"type": "string",
@@ -60,6 +48,10 @@
 		"Office3651_LinkedService_properties_typeProperties_servicePrincipalId": {
 			"type": "string",
 			"defaultValue": "a86f132a-dd4d-456c-9099-05e5a14e9773"
+		},
+		"RestService_Ls_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": " https://conferenceapi.azurewebsites.net/"
 		},
 		"v-defona-azuressis-integrationRuntime_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
 			"type": "string",
@@ -105,9 +97,6 @@
 					"integrationRuntime_v-defona-integrationRuntime": {
 						"value": "[parameters('integrationRuntime_v-defona-integrationRuntime')]"
 					},
-					"AzureBlobStorageLinkedService_servicePrincipalKey": {
-						"value": "[parameters('AzureBlobStorageLinkedService_servicePrincipalKey')]"
-					},
 					"AzureSqlDatabaseLinkedService_connectionString": {
 						"value": "[parameters('AzureSqlDatabaseLinkedService_connectionString')]"
 					},
@@ -126,14 +115,11 @@
 					"AzureBlobStorageLinkedService_properties_typeProperties_serviceEndpoint": {
 						"value": "[parameters('AzureBlobStorageLinkedService_properties_typeProperties_serviceEndpoint')]"
 					},
-					"AzureBlobStorageLinkedService_properties_typeProperties_tenant": {
-						"value": "[parameters('AzureBlobStorageLinkedService_properties_typeProperties_tenant')]"
-					},
-					"AzureBlobStorageLinkedService_properties_typeProperties_servicePrincipalId": {
-						"value": "[parameters('AzureBlobStorageLinkedService_properties_typeProperties_servicePrincipalId')]"
-					},
 					"Office3651_LinkedService_properties_typeProperties_servicePrincipalId": {
 						"value": "[parameters('Office3651_LinkedService_properties_typeProperties_servicePrincipalId')]"
+					},
+					"RestService_Ls_properties_typeProperties_url": {
+						"value": "[parameters('RestService_Ls_properties_typeProperties_url')]"
 					},
 					"v-defona-azuressis-integrationRuntime_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint": {
 						"value": "[parameters('v-defona-azuressis-integrationRuntime_properties_typeProperties_ssisProperties_catalogInfo_catalogServerEndpoint')]"
