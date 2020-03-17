@@ -1,0 +1,17 @@
+{
+	"name": "Eventbasedtrigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/container1/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/f7f898ff-8d73-4f68-ba28-5bde0181d9f6/resourceGroups/v-defona-rgr/providers/Microsoft.Storage/storageAccounts/vdefonastoragev2",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
