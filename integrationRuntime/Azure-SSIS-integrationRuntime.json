@@ -1,0 +1,31 @@
+{
+	"name": "Azure-SSIS-integrationRuntime",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "West Europe",
+				"nodeSize": "Standard_D2_v3",
+				"numberOfNodes": 2,
+				"maxParallelExecutionsPerNode": 2,
+				"vNetProperties": {
+					"vNetId": "/subscriptions/f7f898ff-8d73-4f68-ba28-5bde0181d9f6/resourceGroups/v-defona-rgr-vm/providers/Microsoft.Network/virtualNetworks/v-defona-vnet",
+					"subnet": "default"
+				}
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "v-defona-sqlserver-s.database.windows.net",
+					"catalogAdminUserName": "v-defona",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
